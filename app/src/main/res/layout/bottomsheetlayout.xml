@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="15dp"
+    android:paddingHorizontal="10dp"
+    android:background="@drawable/bottom_dialog_bg">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/assetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="8dp"
+            android:text="@string/INFORMATION"
+            android:textAlignment="viewStart"
+            android:textColor="@color/primary"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/baseline_clear_24" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutAssetTemperature"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/assetIdTempIcon"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/thermometer" />
+
+        <TextView
+            android:id="@+id/assetIdTempText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Temperature"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/assetIdTempIcon"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/assetIdTempValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:text="12321323132"
+            android:textColor="@color/primary"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutAssetHumidity"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/assetInfoHumidityIcon"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/humidity" />
+
+        <TextView
+            android:id="@+id/assetIdHumidText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Humidity"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/assetInfoHumidityIcon"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/assetIdHumidValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:text="12321323132"
+            android:textColor="@color/primary"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutAssetInfoRainfaill"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/assetInfoRainfallIcon"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/rainfall" />
+
+        <TextView
+            android:id="@+id/assetIdRainfallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Rainfall"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/assetInfoRainfallIcon"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/assetIdRainfallValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:text="12321323132"
+            android:textColor="@color/primary"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layoutAssetInfoWindSpeed"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/assetInfoWindSpeedIcon"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/baseline_wind_power_24" />
+
+        <TextView
+            android:id="@+id/assetIdWindSpeedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/WindSpeed"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/assetInfoWindSpeedIcon"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/assetIdWindSpeedValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:text="12321323132"
+            android:textColor="@color/primary"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/showAllBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:layout_marginEnd="10dp"
+        android:text="@string/Show_all_informations"
+        />
+</LinearLayout>

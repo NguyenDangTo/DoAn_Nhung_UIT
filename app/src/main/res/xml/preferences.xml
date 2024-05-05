@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--Account category-->
+    <PreferenceCategory
+        android:title="@string/ACCOUNT"
+        >
+        <Preference
+            android:icon="@drawable/baseline_email_24"
+            android:title="@string/change_username_pref"
+            android:key="email"/>
+        <Preference
+            android:icon="@drawable/baseline_content_copy_24"
+            android:title="@string/change_password_pref"
+            android:key="user_id"/>
+
+        <Preference
+            android:icon="@drawable/baseline_person_24"
+            android:title="@string/Username"
+            android:key="username"/>
+        <Preference
+            android:icon="@drawable/baseline_calendar_month_24"
+            android:title="@string/Created_On"
+            android:key="createdOn"/>
+        <Preference
+            android:icon="@drawable/baseline_broken_image_24"
+            android:title="Realm ID"
+            android:key="realmId"/>
+    </PreferenceCategory>
+    <!--General category-->
+    <PreferenceCategory
+        android:title="@string/General">
+        <ListPreference
+            android:key="Language_key"
+            android:icon="@drawable/baseline_language_24"
+            android:title="@string/Select_language"
+            android:summary=""
+            android:entries="@array/language_entries"
+            android:entryValues="@array/language_values"
+            android:defaultValue="en" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/Logout">
+
+        <Preference
+            android:icon="@drawable/logout_icon"
+            android:title="@string/logout_pref"
+            android:key="logout"
+            android:summary="@string/logout_summary" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
